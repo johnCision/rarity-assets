@@ -1,0 +1,21 @@
+{
+  "name": "@johncision/rarity-assets",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+  },
+  "files": [
+    "app.svg",
+    "rarity.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnCision/rarity-assets.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnCision/rarity-assets/issues"
+  },
+  "homepage": "https://github.com/johnCision/rarity-assets#readme"
+}
