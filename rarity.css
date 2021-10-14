@@ -1,4 +1,4 @@
-@import url("../../theme/themes.css");
+@import url("./paradigm/css/basic-assumptions.css");
 
 .brandC {
 	--theme-primary-background: red;
@@ -11,14 +11,6 @@
 	--theme-nav-background-color: white;
 	--theme-nav-text-color: black;
 }
-
-
-*, :root {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 
 @media (prefers-color-scheme: light) {
 	.brandC {
