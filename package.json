@@ -16,8 +16,5 @@
 	"bugs": {
 		"url": "https://github.com/johnCision/rarity-assets/issues"
 	},
-	"homepage": "https://github.com/johnCision/rarity-assets#readme",
-	"peerDependencies": {
-		"@johncision/fluttershy": "^2.0.0"
-	}
+	"homepage": "https://github.com/johnCision/rarity-assets#readme"
 }
