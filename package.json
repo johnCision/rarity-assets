@@ -1,6 +1,6 @@
 {
   "name": "@johncision/rarity-assets",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "",
   "scripts": {
     "update": "rm -Rf ./paradigm && mkdir ./paradigm && cp -R ./node_modules/@johncision/fluttershy/* ./paradigm"
