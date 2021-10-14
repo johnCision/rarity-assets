@@ -1,4 +1,3 @@
-@import url("./paradigm/css/basic-assumptions.css");
 
 .brandC {
 	--theme-primary-background: red;
@@ -134,7 +133,7 @@ c-application-frame::part(aside) {
 
 #userFace::part(image) {
 	color: black;
-	background-image: url("../../icons/user.svg");
+	background-image: var(--theme-url-icon-user, url("user.svg"));
 
 	display: block;
 

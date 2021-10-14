@@ -1,25 +1,23 @@
 {
-  "name": "@johncision/rarity-assets",
-  "version": "4.0.2",
-  "description": "",
-  "scripts": {
-    "update": "rm -Rf ./paradigm && mkdir ./paradigm && cp -R ./node_modules/@johncision/fluttershy/* ./paradigm"
-  },
-  "files": [
-    "app.svg",
-    "rarity.css"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnCision/rarity-assets.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/johnCision/rarity-assets/issues"
-  },
-  "homepage": "https://github.com/johnCision/rarity-assets#readme",
-  "dependencies": {
-    "@johncision/fluttershy": "^2.0.0"
-  }
+	"name": "@johncision/rarity-assets",
+	"version": "4.1.0",
+	"description": "",
+	"scripts": {},
+	"files": [
+		"src/app.svg",
+		"src/rarity.css"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johnCision/rarity-assets.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/johnCision/rarity-assets/issues"
+	},
+	"homepage": "https://github.com/johnCision/rarity-assets#readme",
+	"peerDependencies": {
+		"@johncision/fluttershy": "^2.0.0"
+	}
 }
