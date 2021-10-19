@@ -1,13 +1,13 @@
 {
 	"name": "@johncision/rarity-assets",
-	"version": "6.0.0",
+	"version": "6.0.1",
 	"description": "",
 	"scripts": {},
 	"files": [
 		"dist/app.svg",
 		"dist/rarity.css",
 		"dist/css/*.css",
-		"dist/themes/*.css"
+		"dist/theme/*.css"
 	],
 	"repository": {
 		"type": "git",
