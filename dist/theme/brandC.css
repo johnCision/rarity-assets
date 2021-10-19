@@ -1,0 +1,28 @@
+
+.brandC {
+	--theme-primary-background: red;
+	--theme-primary-text: red;
+
+	--theme-brand-color: #00607f;
+
+	--theme-button-body-backgrond: blue;
+
+	--theme-nav-background-color: white;
+	--theme-nav-text-color: black;
+
+	--theme-secondary-background-color: papayawhip;
+}
+
+@media (prefers-color-scheme: light) {
+	.brandC {
+		--theme-primary-background: rgb(169, 165, 175);
+		--theme-primary-text: black;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.brandC {
+		--theme-primary-background: rgb(10, 35, 59);
+		--theme-primary-text: white;
+	}
+}

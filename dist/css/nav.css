@@ -1,0 +1,15 @@
+#featureNavList {
+	list-style: none;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#featureNavList > li {
+	display: flex;
+	margin-inline: 1em;
+
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}

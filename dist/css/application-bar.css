@@ -1,0 +1,7 @@
+
+
+c-application-bar {
+	display: flex;
+	background-color: var(--theme-brand-color, red);
+}
+
