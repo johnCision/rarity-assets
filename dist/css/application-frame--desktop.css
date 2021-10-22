@@ -1,23 +1,22 @@
 @media (min-width: 600px) {
 	c-application-frame {
-		grid-template-columns: auto auto 1fr;
+		grid-template-columns: auto 1fr auto;
 		grid-template-areas:
 			"header header  header"
-			"aside    main  sidebar"
-			"aside    main  ad"
+			"bread   bread   bread"
+			"aside    main sidebar"
+			"aside    main      ad"
 			"footer footer  footer"
 	}
 
-	c-application-frame > nav,
-	c-application-frame[show-aside="false"] > nav {
-		min-width: 25%;
-		max-height: none;
-
-
-		width: 0px;
+	c-application-frame::part(aside),
+	c-application-frame[show-aside="false"]::part(aside) {
+		width: 0;
+		height: max-content;
 	}
 
-	c-application-frame[show-aside]:not([show-aside=false]) > nav {
-		width: 200px;
+	c-application-frame[show-aside]::part(aside),
+	c-application-frame[show-aside="true"]::part(aside) {
+		width: 33vw;
 	}
 }

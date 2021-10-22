@@ -1,12 +1,14 @@
 @media (prefers-reduced-motion: no-preference) {
-	c-application-frame > nav {
-		transition: width 1s, background-color 6s;
+	@media (max-width: 600px) {
+		c-application-frame::part(aside) {
+			transition: height 0.5s
+		}
 	}
 
 	/* this could be moved to desktop.animarions file? a bit overkill */
 	@media (min-width: 600px) {
-		c-application-frame > nav {
-			transition: width 2s, background-color 12s;
+		c-application-frame::part(aside) {
+			transition: width .5s ease-in-out
 		}
 	}
 }

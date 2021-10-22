@@ -7,6 +7,16 @@
 	--theme-nav-background-color: white;
 
 	--theme-secondary-background-color: papayawhip;
+	--theme-secondary-text-color: black;
+
+
+	--theme-button-background: #00607f;
+	--theme-button-border-color: black;
+	--theme-button-text-color: white;
+	--theme-button-background-hover: #002b3a;
+	--theme-button-background-hover-text-color: white;
+
+
 
 	font-size: larger;
 	font-family: "Proxima Nova", sans-serif !important;

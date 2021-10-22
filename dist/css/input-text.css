@@ -1,0 +1,9 @@
+
+c-text-input::part(input) {
+	display: block;
+	border: 2px solid orange;
+	background-color: yellow;
+	color: black;
+
+	min-height: 2em;
+}

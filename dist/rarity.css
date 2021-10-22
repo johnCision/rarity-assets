@@ -10,6 +10,13 @@
 @import url('./css/page.css');
 @import url('./css/tut.css');
 @import url('./css/application-bar.css');
+@import url('./css/button.css');
+@import url('./css/button-set.css');
+@import url('./css/input-text.css');
+
+@import url('./css/page-questions.css');
+@import url('./css/question.css');
+
 
 /* by default. remove later */
 @import url('./theme/brandC.css');
@@ -25,6 +32,14 @@
 	--theme-primary-text: black;
 
 	--theme-secondary-background-color: red;
+	--theme-secondary-text-color: black;
+
+	--theme-button-background: red;
+	--theme-button-border-color: red;
+	--theme-button-text-color: black;
+	--theme-button-background-hover: red;
+	--theme-button-background-hover-text-color: black;
+
 
 	--theme-nav-background-color: red;
 	--theme-nav-text-color: black;
