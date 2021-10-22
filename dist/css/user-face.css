@@ -1,7 +1,7 @@
 
 #userFace {
 	display: inline-block;
-	background-color: lightgray;
+	background-color: var(--theme-face-icon-background, red);
 	border-radius: 50%;
 	margin: .25em;
 }
@@ -19,7 +19,7 @@
 }
 
 #userFace::part(image) {
-	color: black;
+	color: var(--theme-face-icon-color, red);
 	background-image: var(--theme-url-icon-user, url("user.svg"));
 
 	display: block;

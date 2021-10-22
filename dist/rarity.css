@@ -2,6 +2,8 @@
 /* or just get it all here */
 @import url('./css/body.css');
 @import url('./css/application-frame.css');
+@import url("./css/application-frame--animations.css");
+@import url("./css/application-frame--desktop.css");
 @import url('./css/user-face.css');
 @import url('./css/nav.css');
 @import url('./css/account-button.css');
@@ -11,3 +13,23 @@
 
 /* by default. remove later */
 @import url('./theme/brandC.css');
+@import url('./theme/brandB.css');
+@import url('./theme/brandG.css');
+
+/* listing variables here as documentation */
+:root {
+	--theme-brand-color: red;
+	--theme-brand-text-color: red;
+
+	--theme-primary-background: red;
+	--theme-primary-text: black;
+
+	--theme-secondary-background-color: red;
+
+	--theme-nav-background-color: red;
+	--theme-nav-text-color: black;
+
+	--theme-url-icon-user: url("user.svg");
+	--theme-face-icon-color: black;
+	--theme-face-icon-background: lightgrey;
+}

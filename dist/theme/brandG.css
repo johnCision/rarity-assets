@@ -1,0 +1,16 @@
+@import url("../overpass-webfont-3.0.5/overpass.css");
+
+.brandG {
+	font-family: "overpass" !important;
+	font-weight: 700;
+	font-size: large;
+
+	--theme-brand-color: green;
+
+	--theme-primary-background: lime;
+	--theme-primary-text: black;
+
+	--theme-secondary-background-color: forestgreen;
+
+	--theme-nav-background-color: darkgreen;
+}
