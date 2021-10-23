@@ -39,7 +39,7 @@ c-application-frame[show-aside="false"]::part(aside) {
 	height: 0
 }
 
-c-application-frame[show-aside]::part(aside),
+c-application-frame[show-aside]:not([show-aside="false"])::part(aside),
 c-application-frame[show-aside="true"]::part(aside) {
 	height: 100%;
 }

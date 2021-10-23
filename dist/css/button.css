@@ -21,6 +21,14 @@ c-button::part(button):hover {
 	color:  var(--theme-button-background-hover-text-color, red);
 }
 
+c-button[disabled]::part(button) {
+	background-color: var(--theme-button-background-disabled, red);
+	color:  var(--theme-button-background-disabled-text-color, red);
+
+	cursor: default;
+}
+
+
 c-button::part(button-icon) {
 	display: none;
 }

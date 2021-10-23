@@ -15,7 +15,8 @@
 	--theme-button-text-color: white;
 	--theme-button-background-hover: #002b3a;
 	--theme-button-background-hover-text-color: white;
-
+	--theme-button-background-disabled: darkgrey;
+	--theme-button-background-disabled-text-color: grey;
 
 
 	font-size: larger;

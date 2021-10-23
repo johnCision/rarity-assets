@@ -15,7 +15,7 @@
 		height: max-content;
 	}
 
-	c-application-frame[show-aside]::part(aside),
+	c-application-frame[show-aside]:not([show-aside="false"])::part(aside),
 	c-application-frame[show-aside="true"]::part(aside) {
 		width: 33vw;
 	}

@@ -18,6 +18,9 @@
 	--theme-button-text-color: white;
 	--theme-button-background-hover: lightgreen;
 	--theme-button-background-hover-text-color: black;
+	--theme-button-background-disabled: darkgrey;
+	--theme-button-background-disabled-text-color: grey;
+
 
 	--theme-nav-background-color: darkgreen;
 }
