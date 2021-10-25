@@ -1,0 +1,8 @@
+
+html[lang="en-US"] c-text[lang="en"] > * {
+	display: none;
+}
+
+html[lang="en-US"] c-text[lang="en"] > span[lang="en"] {
+	display: initial;
+}

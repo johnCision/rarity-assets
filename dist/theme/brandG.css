@@ -20,6 +20,8 @@
 	--theme-button-background-hover-text-color: black;
 	--theme-button-background-disabled: darkgrey;
 	--theme-button-background-disabled-text-color: grey;
+	--theme-button-background-active: white;
+	--theme-button-background-active-text-color: black;
 
 
 	--theme-nav-background-color: darkgreen;

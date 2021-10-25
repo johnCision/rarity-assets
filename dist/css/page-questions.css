@@ -1,8 +1,4 @@
 
-#questionnaire {
-	width: 100%;
-	padding-inline: 5em;
-}
 
 #questions {
 	display: flex;
@@ -13,4 +9,27 @@
 
 	padding-block-start: 2em;
 }
+
+
+rarity-questionnaire#questionnaire {
+	width: 100%;
+	margin-inline: 5em;
+
+	border: 1px dashed rgba(0,0,0,.25);
+}
+
+
+#questionnaire[finished=false] #submit {
+	display: none;
+}
+
+#questionnaire[finished=true] #submit {
+	display: initial;
+}
+
+#questionnaire[finished=true] #prev,
+#questionnaire[finished=true] #next {
+	display: none;
+}
+
 

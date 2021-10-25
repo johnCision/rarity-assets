@@ -1,5 +1,6 @@
-
-.compact c-button {
+.compact c-button::part(button) {
+	border-width: 1px;
 	padding-inline: .5em;
 	padding-bottom: .25em;
+	font-size: 0.75em;
 }

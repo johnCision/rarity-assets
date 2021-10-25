@@ -11,29 +11,32 @@ applicaion, in appliation terms
 
 */
 /* these item are adopted from applejacks */
-@import url('./css/body.css');
-@import url('./css/application-frame.css');
+@import url("./css/body.css");
+@import url("./css/application-frame.css");
 @import url("./css/application-frame--animations.css");
 @import url("./css/application-frame--desktop.css");
-@import url('./css/user-face.css');
-@import url('./css/nav.css');
-@import url('./css/page.css');
-@import url('./css/tut.css');
-@import url('./css/application-bar.css');
-@import url('./css/button.css');
-@import url('./css/button-set.css');
-@import url('./css/input-text.css');
-@import url('./css/input-text.css');
+@import url("./css/user-face.css");
+@import url("./css/nav.css");
+@import url("./css/page.css");
+@import url("./css/tut.css");
+@import url("./css/application-bar.css");
+@import url("./css/button.css");
+@import url("./css/button--compact.css");
+@import url("./css/button-set.css");
+@import url("./css/input-text.css");
+
+/* language behavior specific to c-text  */
+@import url("./css/lang.css");
 
 /* application specific component styles */
-@import url('./css/account-button.css');
-@import url('./css/page-questions.css');
-@import url('./css/question.css');
+@import url("./css/account-button.css");
+@import url("./css/page-questions.css");
+@import url("./css/question.css");
 
 /* import mix of themes */
-@import url('./theme/brandC.css');
-@import url('./theme/brandB.css');
-@import url('./theme/brandG.css');
+@import url("./theme/brandC.css");
+@import url("./theme/brandB.css");
+@import url("./theme/brandG.css");
 
 /*
 listing variables here as documentation
@@ -66,6 +69,8 @@ overriding that until proper path can be resolved])
 	--theme-button-background-hover-text-color: black;
 	--theme-button-background-disabled: red;
 	--theme-button-background-disabled-text-color: grey;
+	--theme-button-background-active: red;
+	--theme-button-background-active-text-color: black;
 
 
 	--theme-nav-background-color: red;

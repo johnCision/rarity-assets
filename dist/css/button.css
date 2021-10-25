@@ -28,6 +28,11 @@ c-button[disabled]::part(button) {
 	cursor: default;
 }
 
+c-button:not([disabled])::part(button):active {
+	background-color: var(--theme-button-background-active, red);
+	color:  var(--theme-button-background-active-text-color, red);
+}
+
 
 c-button::part(button-icon) {
 	display: none;

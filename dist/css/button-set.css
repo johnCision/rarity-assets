@@ -9,11 +9,15 @@ c-button-set {
 }
 
 c-button-set::part(start) {
-	display: block;
+	display: flex;
 	margin-inline-end: auto;
 }
 
 c-button-set::part(end) {
-	display: block;
+	display: flex;
 	margin-inline-start: auto;
+}
+
+c-button-set > c-button[slot="start"] + c-button[slot="start"] {
+	margin-inline-start: 1ch;
 }
