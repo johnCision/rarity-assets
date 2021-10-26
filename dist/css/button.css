@@ -13,6 +13,8 @@ c-button::part(button) {
 
 	border-radius: 1em;
 
+	min-width: 7ch;
+
 	padding-inline: 1em;
 	padding-block: .5em;
 }

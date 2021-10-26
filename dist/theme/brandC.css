@@ -20,6 +20,7 @@
 	--theme-button-background-active: white;
 	--theme-button-background-active-text-color: black;
 
+	--theme-button-set-break-color: var(--theme-brand-color);
 
 	font-size: larger;
 	font-family: "Proxima Nova", sans-serif !important;

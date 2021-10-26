@@ -33,11 +33,6 @@ applicaion, in appliation terms
 @import url("./css/page-questions.css");
 @import url("./css/question.css");
 
-/* import mix of themes */
-@import url("./theme/brandC.css");
-@import url("./theme/brandB.css");
-@import url("./theme/brandG.css");
-
 /*
 listing variables here as documentation
 
@@ -71,6 +66,9 @@ overriding that until proper path can be resolved])
 	--theme-button-background-disabled-text-color: grey;
 	--theme-button-background-active: red;
 	--theme-button-background-active-text-color: black;
+
+	--theme-button-set-break-color: red;
+
 
 
 	--theme-nav-background-color: red;

@@ -3,7 +3,7 @@
 .brandG {
 	font-family: "overpass" !important;
 	font-weight: 700;
-	font-size: large;
+	font-size: 1rem;
 
 	--theme-brand-color: green;
 
@@ -23,10 +23,24 @@
 	--theme-button-background-active: white;
 	--theme-button-background-active-text-color: black;
 
+	--theme-button-set-break-color: forestgreen;
 
 	--theme-nav-background-color: darkgreen;
 }
 
 .brandG c-button::part(button) {
+	border-radius: 0;
+
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+
+}
+
+.brandG #statePager > c-page {
+	box-shadow: inset 0em 1ch 1ch #1c6a1c;
+}
+
+.brandG c-text-input::part(input) {
 	border-radius: 0;
 }
