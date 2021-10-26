@@ -1,8 +1,11 @@
 
-html[lang="en-US"] c-text[lang="en"] > * {
+html[lang="en"] c-text[lang="en"] > span,
+html[lang="fr"] c-text[lang="fr"] > span {
 	display: none;
 }
 
-html[lang="en-US"] c-text[lang="en"] > span[lang="en"] {
+
+html[lang="en"] c-text[lang="en"] > span[lang="en"],
+html[lang="fr"] c-text[lang="fr"] > span[lang="fr"] {
 	display: initial;
 }
