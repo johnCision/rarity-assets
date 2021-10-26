@@ -10,6 +10,7 @@ c-button::part(button) {
 
 	background-color: var(--theme-button-background, red);
 	border: 2px solid var(--theme-button-border-color, red);
+
 	border-radius: 1em;
 
 	padding-inline: 1em;

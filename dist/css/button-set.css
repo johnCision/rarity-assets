@@ -1,5 +1,7 @@
 
 c-button-set {
+	--button-gap: 1ch;
+
 	display: flex;
 
 	margin-block-start: 2em;
@@ -18,6 +20,10 @@ c-button-set::part(end) {
 	margin-inline-start: auto;
 }
 
-c-button-set > c-button[slot="start"] + c-button[slot="start"] {
-	margin-inline-start: 1ch;
+c-button-set > c-button[slot="start"] {
+	margin-inline-end: var(--button-gap);
+}
+
+c-button-set > c-button[slot="end"] {
+	margin-inline-start: var(--button-gap);
 }
