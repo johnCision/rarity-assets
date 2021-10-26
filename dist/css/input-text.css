@@ -1,6 +1,6 @@
 
 c-text-input::part(input) {
-	display: block;
+	display: flex;
 	border: 1px solid grey;
 	border-bottom-color: transparent;
 	border-right-color: transparent;
@@ -11,5 +11,10 @@ c-text-input::part(input) {
 	color: black;
 	min-height: 2em;
 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
 	width: 100%;
+	/* width: fill-available; */
 }
