@@ -10,13 +10,14 @@ c-button::part(button) {
 
 	background-color: var(--theme-button-background, red);
 	border: 2px solid var(--theme-button-border-color, red);
+	/* border-color: transparent; */
 
 	border-radius: 1em;
 
 	min-width: 7ch;
 
-	padding-inline: 1em;
-	padding-block: .5em;
+	/* padding-inline: 12em;
+	padding-block: .25em; */
 }
 
 c-button::part(button):hover {

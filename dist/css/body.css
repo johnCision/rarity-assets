@@ -8,3 +8,23 @@ body {
 	width: 100vw;
 	/* overflow: hidden; */
 }
+
+c-text {
+	display: inline;
+}
+
+c-pager {
+	display: inline;
+}
+
+c-page {
+	display: block;
+}
+
+c-progress {
+	display: block;
+}
+
+c-text-input {
+	display: block;
+}

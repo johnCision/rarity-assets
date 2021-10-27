@@ -1,7 +1,7 @@
 @import url("../overpass-webfont-3.0.5/overpass.css");
 
 .brandG {
-	font-family: "overpass" !important;
+	font-family: "overpass", serif !important;
 	font-weight: 700;
 	font-size: 1rem;
 

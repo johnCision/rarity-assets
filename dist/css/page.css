@@ -27,4 +27,12 @@
 	height: 100%;
 }
 
+#statePager > c-page#loadError[active="true"] {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
 
+
+	padding-block-start: 2em;
+	color: red;
+}

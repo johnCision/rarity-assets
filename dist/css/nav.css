@@ -8,7 +8,9 @@
 #featureNavList > li {
 	position: relative;
 	display: flex;
-	margin-inline: 1em;
+
+	margin-inline: -1px;
+	transition: margin-inline 2s;
 
   justify-content: center;
   align-content: center;
@@ -35,4 +37,29 @@
 
 #featureNavList > li[data-open=true] > ul > li:focus {
 	border: 2px solid red;
+}
+
+#featureNavList > li > c-button::part(button) {
+	border-width: 0;
+
+	padding-inline: 0.125em;
+	transition: padding-inline 2s;
+}
+
+@media (min-width: 420px) {
+	#featureNavList > li {
+		margin-inline: .5em;
+	}
+
+	#featureNavList > li > c-button::part(button) {
+		padding-inline: 1em;
+	}
+}
+
+@media (min-width: 600px) {
+	#featureNavList > li {
+		margin-inline: 1em;
+	}
+
+
 }

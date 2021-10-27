@@ -12,6 +12,8 @@
 
 
 rarity-questionnaire#questionnaire {
+	display: block;
+
 	width: 100%;
 	margin-inline: 5em;
 

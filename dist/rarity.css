@@ -8,8 +8,17 @@ that are applicable.
 
 the resulting output is directly consumable for the
 applicaion, in appliation terms
-
 */
+
+/* application specific component styles */
+@import url("./css/account-button.css");
+@import url("./css/page-questions.css");
+@import url("./css/question.css");
+@import url("./css/application.css");
+
+/* language behavior specific to c-text  */
+@import url("./css/lang.css");
+
 /* these item are adopted from applejacks */
 @import url("./css/body.css");
 @import url("./css/application-frame.css");
@@ -25,13 +34,6 @@ applicaion, in appliation terms
 @import url("./css/button-set.css");
 @import url("./css/input-text.css");
 
-/* language behavior specific to c-text  */
-@import url("./css/lang.css");
-
-/* application specific component styles */
-@import url("./css/account-button.css");
-@import url("./css/page-questions.css");
-@import url("./css/question.css");
 
 /*
 listing variables here as documentation

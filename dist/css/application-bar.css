@@ -6,3 +6,7 @@ c-application-bar {
 	color: var(--theme-brand-text-color, red);
 }
 
+rarity-user-account {
+	display: block;
+}
+
