@@ -10,22 +10,19 @@ the resulting output is directly consumable for the
 applicaion, in appliation terms
 */
 
-/* application specific component styles */
+@import url("./css/body.css");
+@import url("./css/application-frame.css");
+@import url("./css/nav.css");
+@import url("./css/lang.css");
+
 @import url("./css/account-button.css");
 @import url("./css/page-questions.css");
+@import url("./css/page-settings.css");
+@import url("./css/page-unknown.css");
 @import url("./css/question.css");
 @import url("./css/application.css");
 
-/* language behavior specific to c-text  */
-@import url("./css/lang.css");
-
-/* these item are adopted from applejacks */
-@import url("./css/body.css");
-@import url("./css/application-frame.css");
-@import url("./css/application-frame--animations.css");
-@import url("./css/application-frame--desktop.css");
 @import url("./css/user-face.css");
-@import url("./css/nav.css");
 @import url("./css/page.css");
 @import url("./css/tut.css");
 @import url("./css/application-bar.css");
@@ -33,6 +30,12 @@ applicaion, in appliation terms
 @import url("./css/button--compact.css");
 @import url("./css/button-set.css");
 @import url("./css/input-text.css");
+
+@import url('./css/account-button--desktop.css');
+@import url('./css/nav--desktop.css');
+@import url("./css/application-frame--animations.css");
+@import url("./css/application-frame--desktop.css");
+
 
 
 /*
@@ -73,8 +76,8 @@ overriding that until proper path can be resolved])
 
 
 
-	--theme-nav-background-color: red;
-	--theme-nav-text-color: black;
+	--theme-aside-background-color: red;
+	--theme-aside-text-color: black;
 
 	--theme-url-icon-user: url("user.svg");
 	--theme-face-icon-color: black;

@@ -12,8 +12,8 @@
 
 
 #statePager > c-page {
-	background-color: var(--theme-secondary-background-color, red);
-	color: var(--theme-secondary-text-color, red);
+	background-color: var(--theme-non-interactive-page-background, red);
+	color: var(--theme-interfactive-control-text-color, red);
 }
 
 

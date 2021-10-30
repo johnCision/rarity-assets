@@ -1,13 +1,17 @@
 
 
 #accountButton {
-	display: block;
+	margin-inline-end: 0;
+	margin-block: 0.2em;
 }
 
 #accountButton::part(button) {
 	background: transparent;
 	border: none;
 	padding: 0;
+
+	display: flex;
+	justify-content: end;
 }
 
 #accountButton::part(button-icon) {

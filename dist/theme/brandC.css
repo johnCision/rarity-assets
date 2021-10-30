@@ -3,11 +3,28 @@
 	--theme-brand-color: #00607f;
 	--theme-brand-text-color: white;
 
-	--theme-button-body-backgrond: blue;
-	--theme-nav-background-color: white;
+	--theme-application-bar-background-color: var(--theme-brand-color);
+	--theme-application-bar-text-color: var(--theme-brand-text-color);
 
-	--theme-secondary-background-color: papayawhip;
-	--theme-secondary-text-color: black;
+	--theme-non-interactive-page-background: var(--scheme-secondary-background-color);
+	--theme-interactive-control-background: var(--scheme-primary-background);
+	--theme-interfactive-control-accent-color: var(--scheme-accent-color);
+	--theme-interfactive-control-text-color: var(--scheme-primary-text);
+	--theme-control-page-boundry-color: var(--scheme-control-page-boundry-color);
+
+
+
+
+
+	--theme-aside-background-color: var(--scheme-secondary-background-color);
+
+
+
+
+
+
+	--theme-button-body-backgrond: blue;
+
 
 
 	--theme-button-background: #00607f;
@@ -28,14 +45,28 @@
 
 @media (prefers-color-scheme: light) {
 	.brandC {
-		--theme-primary-background: rgb(169, 165, 175);
-		--theme-primary-text: black;
+		--scheme-primary-background: white;
+		--scheme-primary-text: black;
+
+		--scheme-secondary-background-color: papayawhip;
+		--scheme-secondary-text-color: black;
+
+		--scheme-accent-color: #60bdd0;
+
+		--scheme-control-page-boundry-color: #dbc59a;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	.brandC {
-		--theme-primary-background: rgb(10, 35, 59);
-		--theme-primary-text: white;
+		--scheme-primary-background: rgb(10, 35, 59);
+		--scheme-primary-text: white;
+
+		--scheme-secondary-background-color: #0a1724;
+		--sheme-secondary-text-color: white;
+
+		--scheme-accent-color: yellow;
+
+		--scheme-control-page-boundry-color: #203a52;
 	}
 }

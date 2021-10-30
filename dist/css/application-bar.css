@@ -2,8 +2,8 @@
 
 c-application-bar {
 	display: flex;
-	background-color: var(--theme-brand-color, red);
-	color: var(--theme-brand-text-color, red);
+	background-color: var(--theme-application-bar-background-color, red);
+	color: var(--theme-application-bar-text-color, red);
 }
 
 rarity-user-account {

@@ -31,8 +31,8 @@ c-application-frame::part(aside),
 c-application-frame[show-aside="false"]::part(aside) {
 	grid-area: aside;
 	display: block;
-	background-color: var(--theme-nav-background-color, red);
-	color: var(--theme-nav-text-color, red);
+	background-color: var(--theme-aside-background-color, red);
+	color: var(--theme-aside-text-color, red);
 
 	overflow-y: scroll;
 

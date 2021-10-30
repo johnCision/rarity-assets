@@ -1,0 +1,17 @@
+
+@media (min-width: 420px) {
+	#featureNavList > li {
+		margin-inline: .5em;
+	}
+
+	#featureNavList > li > c-button::part(button) {
+		padding-inline: 1em;
+	}
+}
+
+@media (min-width: 600px) {
+	#featureNavList > li {
+		margin-inline: 1em;
+	}
+
+}

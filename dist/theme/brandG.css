@@ -25,7 +25,7 @@
 
 	--theme-button-set-break-color: forestgreen;
 
-	--theme-nav-background-color: darkgreen;
+	--theme-aside-background-color: darkgreen;
 }
 
 .brandG c-button::part(button) {

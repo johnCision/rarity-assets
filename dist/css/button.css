@@ -1,12 +1,13 @@
 
 c-button {
 	display: block;
+	cursor: pointer;
 	background-color: transparent;
 }
 
 c-button::part(button) {
 	display: block;
-	cursor: pointer;
+	cursor: inherit;
 
 	background-color: var(--theme-button-background, red);
 	border: 2px solid var(--theme-button-border-color, red);
@@ -20,7 +21,7 @@ c-button::part(button) {
 	padding-block: .25em; */
 }
 
-c-button::part(button):hover {
+c-button:hover::part(button) {
 	background-color: var(--theme-button-background-hover, red);
 	color:  var(--theme-button-background-hover-text-color, red);
 }

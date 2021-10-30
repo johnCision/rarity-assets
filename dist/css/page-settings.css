@@ -1,0 +1,99 @@
+
+#settings[active="true"] {
+	display: flex;
+	justify-content: start;
+	height: 100%;
+	flex-direction: column;
+}
+
+
+
+
+#settingsControlBar {
+	display: flex;
+	border-block-end: 1px solid var(--scheme-control-page-boundry-color, red);
+	background-color: var(--theme-interactive-control-background, red);
+}
+
+#settingsControlBar > p {
+	min-width: 10ch;
+}
+
+
+
+
+#tabBar {
+	display: flex;
+	justify-content: start;
+	width: 100%;
+	padding-inline-start: 1em;
+}
+
+
+
+
+#tabBar > c-page > c-button {
+	height: 100%;
+	padding-inline: 1ch;
+}
+
+#tabBar > c-page > c-button:hover {
+	background-color: #b5d6dc;
+}
+#tabBar > c-page[active="true"] > c-button:hover {
+	background-color: initial;
+	cursor:initial;
+}
+
+
+
+
+#tabBar > c-page > c-button::part(button) {
+	background-color: transparent;
+	padding-block: 0;
+	height: 100%;
+	border: 0;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+#tabBar > c-page > c-button * {
+	margin-inline: 0.25em;
+}
+
+#tabBar > c-page[active="true"] > c-button * {
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+
+	font-weight: bolder;
+}
+
+#tabBar > c-page[active="true"] > c-button *::after {
+	bottom: 0;
+	content: '';
+	position:absolute;
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: var(--theme-interfactive-control-accent-color, red);
+
+}
+
+
+
+
+#tabBody {
+	max-width: 77ch;
+	width: 90%;
+	margin-block-start: 2em;
+	margin-inline: auto;
+	background-color: var(--theme-interactive-control-background, red);
+}
+
