@@ -15,6 +15,13 @@
 	background-color: var(--theme-interactive-control-background, red);
 }
 
+#settingsControlBar > c-text {
+	margin-block: auto;
+}
+#settingsControlBar > c-button {
+	margin-block: auto;
+}
+
 #settingsControlBar > p {
 	min-width: 10ch;
 }
@@ -30,19 +37,36 @@
 }
 
 
-
+#tabBar > c-page {
+	--tab-bar-highlight-color: 181, 214, 220;
+}
 
 #tabBar > c-page > c-button {
-	height: 100%;
+	height: 3em;
 	padding-inline: 1ch;
 }
 
+
 #tabBar > c-page > c-button:hover {
-	background-color: #b5d6dc;
+	background-color: rgba(var(--tab-bar-highlight-color), 0.25);
 }
+
+
+#tabBar > c-page[active="true"] > c-button {
+	background-color: rgb(var(--tab-bar-highlight-color));
+}
+
 #tabBar > c-page[active="true"] > c-button:hover {
 	background-color: initial;
 	cursor:initial;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+	#tabBar > c-page > c-button {
+		transition:
+			.25s linear background-color
+	}
 }
 
 
@@ -63,6 +87,7 @@
 
 #tabBar > c-page > c-button * {
 	margin-inline: 0.25em;
+
 }
 
 #tabBar > c-page[active="true"] > c-button * {
@@ -73,7 +98,10 @@
 	height: 100%;
 
 	font-weight: bolder;
+
+	color: black;
 }
+
 
 #tabBar > c-page[active="true"] > c-button *::after {
 	bottom: 0;
@@ -82,7 +110,7 @@
 	display: block;
 	height: 5px;
 	width: 100%;
-	background-color: var(--theme-interfactive-control-accent-color, red);
+	background-color: var(--theme-interactive-control-accent-color, red);
 
 }
 

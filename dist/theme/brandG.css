@@ -5,16 +5,32 @@
 	font-weight: 700;
 	font-size: 1rem;
 
+	accent-color: var(--scheme-accent-color);
+
 	--theme-brand-color: green;
+	--theme-brand-text-color: white;
 
-	--theme-primary-background: lime;
-	--theme-primary-text: black;
+	--theme-application-bar-background-color: var(--theme-brand-color);
+	--theme-application-bar-text-color: var(--theme-brand-text-color);
 
-	--theme-secondary-background-color: palegreen;
-	--theme-secondary-text-color: black;
+	--theme-non-interactive-page-background: var(--scheme-secondary-background-color);
+	--theme-interactive-control-background: var(--scheme-primary-background);
+	--theme-interactive-control-accent-color: var(--scheme-accent-color);
+	--theme-interactive-control-text-color: var(--scheme-primary-text);
+	--theme-control-page-boundry-color: var(--scheme-control-page-boundry-color);
+
+
+
+
+
+	--theme-aside-background-color: var(--scheme-tirinary-background-color);
+	--theme-aside-text-color: var(--scheme-tirinary-text-color);
+
+
 
 	--theme-button-background: green;
 	--theme-button-border-color: darkgreen;
+	--theme-button-border-color-hover: lime;
 	--theme-button-text-color: white;
 	--theme-button-background-hover: lightgreen;
 	--theme-button-background-hover-text-color: black;
@@ -24,9 +40,50 @@
 	--theme-button-background-active-text-color: black;
 
 	--theme-button-set-break-color: forestgreen;
-
-	--theme-aside-background-color: darkgreen;
 }
+
+@media (prefers-color-scheme: light) {
+	.brandG {
+		--scheme-primary-background: lime;
+		--scheme-primary-text: black;
+
+		--scheme-secondary-background-color: palegreen;
+		--scheme-secondary-text-color: black;
+
+		--scheme-tirinary-background-color: green;
+		--scheme-tirinary-text-color: white;
+
+		--scheme-accent-color: orange;
+
+		--scheme-control-page-boundry-color: forestgreen;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.brandG {
+		--theme-application-bar-background-color: #022002;
+		--theme-application-bar-text-color: white;
+
+		--scheme-primary-background: darkgreen;
+		--scheme-primary-text: white;
+
+		--scheme-secondary-background-color: #0f360f;
+		--scheme-secondary-text-color: black;
+
+		--scheme-tirinary-background-color: lime;
+		--scheme-tirinary-text-color: black;
+
+		--scheme-accent-color: orange;
+
+		--scheme-control-page-boundry-color: green;
+	}
+}
+
+
+
+
+
+
 
 .brandG c-button::part(button) {
 	border-radius: 0;
@@ -42,4 +99,41 @@
 
 .brandG c-text-input::part(input) {
 	border-radius: 0;
+}
+
+@media (min-width: 400px) {
+	.brandG c-application-frame {
+		grid-template-rows: auto auto;
+		grid-template-areas:
+		"header aside   main   chat"
+		"header aside    main   chat";
+	}
+
+
+	.brandG #chat[data-show-chat] {
+		position: initial;
+		width: initial;
+		height: initial;
+		margin: 0;
+		padding: 0;
+	}
+
+	.brandG c-application-bar {
+		flex-direction: column;
+		width: 3em;
+	}
+
+	.brandG #featureNavList {
+		flex-direction: column;
+		max-width: 1em;
+		text-overflow: ellipsis;
+	}
+
+	.brandG #featureNavList > li > c-button:not([slot]) {
+		display: none;
+	}
+
+	.brandG #accountButton::part(button) {
+		flex-direction: column;
+	}
 }

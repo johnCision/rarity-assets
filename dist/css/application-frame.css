@@ -9,12 +9,17 @@ c-application-frame {
 }
 
 c-application-frame {
-	grid-template-rows: auto auto auto 1fr;
+	grid-template-rows: auto auto 1fr 1fr;
 	grid-template-areas:
 		"header"
-		"bread"
 		"aside"
-		"main";
+		"main"
+		"chat";
+}
+
+c-application-frame::part(chat) {
+	display: none;
+	grid-area: chat;
 }
 
 c-application-frame::part(header) {

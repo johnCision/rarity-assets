@@ -19,17 +19,19 @@ applicaion, in appliation terms
 @import url("./css/page-questions.css");
 @import url("./css/page-settings.css");
 @import url("./css/page-unknown.css");
+@import url("./css/page-dashboard.css");
+@import url("./css/page-community.css");
 @import url("./css/question.css");
 @import url("./css/application.css");
-
 @import url("./css/user-face.css");
+@import url("./css/chat.css");
+@import url("./css/chat--desktop.css");
 @import url("./css/page.css");
 @import url("./css/tut.css");
 @import url("./css/application-bar.css");
-@import url("./css/button.css");
-@import url("./css/button--compact.css");
 @import url("./css/button-set.css");
 @import url("./css/input-text.css");
+@import url("./css/icon.css");
 
 @import url('./css/account-button--desktop.css');
 @import url('./css/nav--desktop.css');
@@ -80,6 +82,7 @@ overriding that until proper path can be resolved])
 	--theme-aside-text-color: black;
 
 	--theme-url-icon-user: url("user.svg");
+	--theme-url-icon-close: url("close.svg");
 	--theme-face-icon-color: black;
 	--theme-face-icon-background: lightgrey;
 }

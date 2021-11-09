@@ -1,0 +1,21 @@
+
+c-icon {
+	display: none;
+}
+
+c-icon[name] {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+c-icon[name="user"]::part(image) {
+	background-image: var(--theme-url-icon-user, url("user.svg"));
+}
+
+c-icon[name="close"] {
+	content: 'close'
+}
+c-icon[name="close"]::part(image) {
+	background-image: var(--theme-url-icon-close, url("close.svg"));
+}

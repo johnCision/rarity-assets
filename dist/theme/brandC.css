@@ -1,6 +1,10 @@
 
 .brandC {
-	--theme-brand-color: #00607f;
+	/* --theme-brand-color: #00607f; */
+	--theme-brand-color: hsla(195, 100%, 33%, 1);
+
+	accent-color: var(--scheme-accent-color);
+
 	--theme-brand-text-color: white;
 
 	--theme-application-bar-background-color: var(--theme-brand-color);
@@ -8,36 +12,40 @@
 
 	--theme-non-interactive-page-background: var(--scheme-secondary-background-color);
 	--theme-interactive-control-background: var(--scheme-primary-background);
-	--theme-interfactive-control-accent-color: var(--scheme-accent-color);
-	--theme-interfactive-control-text-color: var(--scheme-primary-text);
+	--theme-interactive-control-accent-color: var(--scheme-accent-color);
+	--theme-interactive-control-text-color: var(--scheme-primary-text);
 	--theme-control-page-boundry-color: var(--scheme-control-page-boundry-color);
 
 
 
 
-
-	--theme-aside-background-color: var(--scheme-secondary-background-color);
-
-
+	--theme-aside-background-color: var(--scheme-tirinary-background-color);
+	--theme-aside-text-color: var(--scheme-tirinary-text-color);
 
 
 
 
-	--theme-button-body-backgrond: blue;
-
-
-
-	--theme-button-background: #00607f;
-	--theme-button-border-color: black;
+	--theme-button-background-color: var(--theme-brand-color);
+	--theme-button-border-color: var(--theme-brand-color);
 	--theme-button-text-color: white;
-	--theme-button-background-hover: #002b3a;
-	--theme-button-background-hover-text-color: white;
-	--theme-button-background-disabled: darkgrey;
-	--theme-button-background-disabled-text-color: grey;
-	--theme-button-background-active: white;
-	--theme-button-background-active-text-color: black;
+
+	--theme-button-background-color-hover: var(--scheme-accent-color);
+	--theme-button-border-color-hover: var(--scheme-accent-color);
+	--theme-button-text-color-hover: white;
+
+	--theme-button-background-color-disabled: darkgrey;
+	--theme-button-border-color-disabled: grey;
+	--theme-button-text-color-disabled: grey;
+
+	--theme-button-background-color-active: white;
+	--theme-button-border-color-active: white;
+	--theme-button-text-color-active: black;
+
+
 
 	--theme-button-set-break-color: var(--theme-brand-color);
+
+
 
 	font-size: larger;
 	font-family: "Proxima Nova", sans-serif !important;
@@ -51,7 +59,11 @@
 		--scheme-secondary-background-color: papayawhip;
 		--scheme-secondary-text-color: black;
 
-		--scheme-accent-color: #60bdd0;
+		--scheme-tirinary-background-color: #c9ba9d;
+		--scheme-tirinary-text-color: black;
+
+		/* --scheme-accent-color: #60bdd0; */
+		--scheme-accent-color: hsla(194, 90%, 44%, 1);
 
 		--scheme-control-page-boundry-color: #dbc59a;
 	}
@@ -65,7 +77,10 @@
 		--scheme-secondary-background-color: #0a1724;
 		--sheme-secondary-text-color: white;
 
-		--scheme-accent-color: yellow;
+		--scheme-tirinary-background-color: grey;
+		--scheme-tirinary-text-color: black;
+
+		--scheme-accent-color: hsla(194, 90%, 25%, 1);;
 
 		--scheme-control-page-boundry-color: #203a52;
 	}

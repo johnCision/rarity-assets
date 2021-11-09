@@ -1,0 +1,12 @@
+@media (min-width: 600px) {
+	#chat {
+		position:absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	#chat[data-show-chat] {
+		height: 20em;
+		width: 40ch;
+	}
+}

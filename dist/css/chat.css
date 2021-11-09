@@ -1,0 +1,52 @@
+
+#chat {
+	display: none;
+	grid-area: chat;
+}
+
+#chat[data-show-chat] {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+
+	background-color: rgba(250, 250, 250, 0.85);
+	color: black;
+
+	margin: 1em;
+	padding: 1em;
+}
+
+html[offline] #chat {
+	background-color: pink;
+}
+
+#chatControls {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#closeChat::part(button) {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	min-width: initial;
+}
+
+#chatDisplay {
+	height: 100%;
+	margin-block-start: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+#chatForm {
+	display: flex;
+	justify-content: space-between;
+}
+
+#chatInput {
+	width: 100%;
+}

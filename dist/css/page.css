@@ -1,19 +1,13 @@
 
 
-
-
-#statePager > c-page {
-	display: none
-}
-
-#statePager > c-page[active="true"] {
-	display: flex;
+#statePager > c-page:not([active="true"]) {
+	display: none;
 }
 
 
 #statePager > c-page {
 	background-color: var(--theme-non-interactive-page-background, red);
-	color: var(--theme-interfactive-control-text-color, red);
+	color: var(--theme-interactive-control-text-color, red);
 }
 
 
