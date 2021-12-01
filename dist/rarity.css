@@ -21,6 +21,7 @@ applicaion, in appliation terms
 @import url("./css/page-unknown.css");
 @import url("./css/page-dashboard.css");
 @import url("./css/page-community.css");
+@import url("./css/page-first-time.css");
 @import url("./css/question.css");
 @import url("./css/application.css");
 @import url("./css/user-face.css");
@@ -83,6 +84,8 @@ overriding that until proper path can be resolved])
 
 	--theme-url-icon-user: url("user.svg");
 	--theme-url-icon-close: url("close.svg");
+	--theme-url-icon-alerts: url("alerts.svg");
+
 	--theme-face-icon-color: black;
 	--theme-face-icon-background: lightgrey;
 }

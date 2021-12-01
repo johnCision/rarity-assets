@@ -5,77 +5,45 @@
 	font-weight: 700;
 	font-size: 1rem;
 
-	accent-color: var(--scheme-accent-color);
-
 	--theme-brand-color: green;
 	--theme-brand-text-color: white;
-
-	--theme-application-bar-background-color: var(--theme-brand-color);
-	--theme-application-bar-text-color: var(--theme-brand-text-color);
-
-	--theme-non-interactive-page-background: var(--scheme-secondary-background-color);
-	--theme-interactive-control-background: var(--scheme-primary-background);
-	--theme-interactive-control-accent-color: var(--scheme-accent-color);
-	--theme-interactive-control-text-color: var(--scheme-primary-text);
-	--theme-control-page-boundry-color: var(--scheme-control-page-boundry-color);
-
-
-
-
-
-	--theme-aside-background-color: var(--scheme-tirinary-background-color);
-	--theme-aside-text-color: var(--scheme-tirinary-text-color);
-
-
-
-	--theme-button-background: green;
-	--theme-button-border-color: darkgreen;
-	--theme-button-border-color-hover: lime;
-	--theme-button-text-color: white;
-	--theme-button-background-hover: lightgreen;
-	--theme-button-background-hover-text-color: black;
-	--theme-button-background-disabled: darkgrey;
-	--theme-button-background-disabled-text-color: grey;
-	--theme-button-background-active: white;
-	--theme-button-background-active-text-color: black;
-
-	--theme-button-set-break-color: forestgreen;
 }
 
 @media (prefers-color-scheme: light) {
 	.brandG {
 		--scheme-primary-background: lime;
 		--scheme-primary-text: black;
+		--scheme-primary-border: red;
 
 		--scheme-secondary-background-color: palegreen;
 		--scheme-secondary-text-color: black;
 
-		--scheme-tirinary-background-color: green;
-		--scheme-tirinary-text-color: white;
+		--scheme-trinary-background-color: green;
+		--scheme-trinary-text-color: white;
 
 		--scheme-accent-color: orange;
+		--scheme-accent-text-color: white;
 
-		--scheme-control-page-boundry-color: forestgreen;
+		--scheme-control-page-boundary-color: forestgreen;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	.brandG {
-		--theme-application-bar-background-color: #022002;
-		--theme-application-bar-text-color: white;
-
-		--scheme-primary-background: darkgreen;
+		--scheme-primary-background: #darkgreen;
 		--scheme-primary-text: white;
+		--scheme-primary-border: #red;
 
 		--scheme-secondary-background-color: #0f360f;
 		--scheme-secondary-text-color: black;
 
-		--scheme-tirinary-background-color: lime;
-		--scheme-tirinary-text-color: black;
+		--scheme-trinary-background-color: lime;
+		--scheme-trinary-text-color: black;
 
 		--scheme-accent-color: orange;
+		--scheme-accent-text-color: white;
 
-		--scheme-control-page-boundry-color: green;
+		--scheme-control-page-boundary-color: green;
 	}
 }
 

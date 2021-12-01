@@ -11,7 +11,7 @@
 
 #settingsControlBar {
 	display: flex;
-	border-block-end: 1px solid var(--scheme-control-page-boundry-color, red);
+	border-block-end: 1px solid var(--scheme-control-page-boundary-color, red);
 	background-color: var(--theme-interactive-control-background, red);
 }
 
@@ -87,7 +87,7 @@
 
 #tabBar > c-page > c-button * {
 	margin-inline: 0.25em;
-
+	color: black;
 }
 
 #tabBar > c-page[active="true"] > c-button * {
@@ -99,7 +99,6 @@
 
 	font-weight: bolder;
 
-	color: black;
 }
 
 
@@ -110,6 +109,7 @@
 	display: block;
 	height: 5px;
 	width: 100%;
+	border-radius: 5px;
 	background-color: var(--theme-interactive-control-accent-color, red);
 
 }

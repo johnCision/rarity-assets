@@ -1,7 +1,7 @@
 @media (prefers-reduced-motion: no-preference) {
 	@media (max-width: 600px) {
 		c-application-frame::part(aside) {
-			transition: height 0.5s
+			transition: height 0.5s;
 		}
 	}
 

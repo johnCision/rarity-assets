@@ -19,3 +19,7 @@ c-icon[name="close"] {
 c-icon[name="close"]::part(image) {
 	background-image: var(--theme-url-icon-close, url("close.svg"));
 }
+
+c-icon[name="alerts"]::part(image) {
+	background-image: var(--theme-url-icon-alerts, url("alerts.svg"));
+}

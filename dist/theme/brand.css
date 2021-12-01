@@ -1,0 +1,45 @@
+body {
+	accent-color: var(--scheme-accent-color);
+
+	--theme-application-bar-background-color: var(--theme-brand-color);
+	--theme-application-bar-text-color: var(--theme-brand-text-color);
+
+	--theme-non-interactive-page-background: var(--scheme-secondary-background-color);
+	--theme-interactive-control-background: var(--scheme-primary-background);
+	--theme-interactive-control-border-color: var(--scheme-primary-border);
+	--theme-interactive-control-accent-color: var(--scheme-accent-color);
+	--theme-interactive-control-text-color: var(--scheme-primary-text);
+	--theme-control-page-boundary-color: var(--scheme-control-page-boundary-color);
+
+
+	--theme-aside-background-color: var(--scheme-trinary-background-color);
+	--theme-aside-text-color: var(--scheme-trinary-text-color);
+
+
+	/* Button Stuff  */
+	--theme-button-background-color: var(--theme-brand-color);
+	--theme-button-border-color: var(--theme-brand-color);
+	--theme-button-text-color: var(--theme-brand-text-color);
+
+	--theme-button-background-color-hover: var(--scheme-accent-color);
+	--theme-button-border-color-hover: var(--scheme-accent-color);
+	--theme-button-text-color-hover: var(--scheme-accent-text-color);
+
+	--theme-button-background-color-disabled: darkgrey;
+	--theme-button-border-color-disabled: grey;
+	--theme-button-text-color-disabled: grey;
+
+	--theme-button-background-color-active: white;
+	--theme-button-border-color-active: white;
+	--theme-button-text-color-active: black;
+
+
+	--theme-button-set-break-color: var(--theme-brand-color);
+
+
+	/* First Time Tile Stuff  */
+	--theme-dashboard-background-color: var(--theme-non-interactive-page-background);
+	--theme-dashboard-tile-background-color: var(--theme-interactive-control-background);
+	--theme-dashboard-tile-border-color:  var(--theme-interactive-control-border-color);
+	--theme-dashboard-tile-text-color: var(--theme-interactive-control-text-color);
+}

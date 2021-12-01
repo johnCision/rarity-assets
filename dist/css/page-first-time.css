@@ -1,0 +1,113 @@
+
+#firstTime {
+	--dashboard-tile-gap: 1em;
+
+	display: grid;
+
+	height: 100%;
+
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 2em;
+	grid-template-areas:
+		"control control"
+		"dashboard quickLooks";
+}
+
+#firstTimePageControls {
+	grid-area: control;
+	background: var(--theme-interactive-control-background, red);
+}
+
+
+/* tile-like */
+#dashboard > li:not(#myItems),
+#myItems > ul > li ,
+#usageTile {
+	background-color: var(--theme-dashboard-tile-background-color, red);
+	color: var(--theme-dashboard-tile-text-color, red);
+
+	border: 1px solid var(--theme-dashboard-tile-border-color, red);
+	border-radius: 0.5em;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+#dashboard {
+	grid-area: dashboard;
+	height: 100%;
+	gap: var(--dashboard-tile-gap, red);
+
+	padding: var(--dashboard-tile-gap, red);
+
+	background-color: var(--theme-dashboard-background-color, red);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	list-style: none;
+}
+
+#dashboard > li:not(#myItems) {
+	grid-area: my;
+	display: block;
+}
+
+#myDashboards {
+	list-style: none;
+}
+
+#myItems > ul {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--dashboard-tile-gap, red);
+}
+
+#myItems > ul > li {
+	list-style: none;
+	display: block;
+}
+
+
+#quickLooks {
+	grid-area: quickLooks;
+	height: 100%;
+
+	list-style: none;
+
+	background-color: var(--theme-aside-background-color, red);
+	color: var(--theme-aside-text-color, red);
+
+	padding-inline: var(--dashboard-tile-gap, red);
+	padding-block: var(--dashboard-tile-gap, red);
+}
+
+#quickLooks > li {
+	display: block;
+}
+
+#usageTile {
+	display: grid !important;
+	grid-template: "icon title" "display display";
+}
+
+#usageTile > h4 {
+	grid-area: title;
+}
+
+#usageTile > c-icon {
+	grid-area: icon;
+}
+
+#usageTile > div {
+	grid-area: display;
+}
+
+#usageBars > label {
+	display: block;
+}
+
+#usageBars > progress {
+	display: block;
+}
+
