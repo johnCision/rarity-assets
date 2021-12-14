@@ -2,12 +2,12 @@
 
 this is the application composition file of styles
 
-that is to say.  styles from external are mixxed here
+that is to say.  styles from external are mixed here
 with addition or other resources (fonts, svg, icons)
 that are applicable.
 
 the resulting output is directly consumable for the
-applicaion, in appliation terms
+application, in application terms
 */
 
 @import url("./css/body.css");
@@ -47,11 +47,11 @@ applicaion, in appliation terms
 listing variables here as documentation
 
 do NOT change/edit these here
-they are to be overriden by each brand as needed
+they are to be overridden by each brand as needed
 
 (note: these variables are NOT shared with the
 application logic or component toolkit, they are
-only here to sever this instnaces organization method,
+only here to sever this instances organization method,
 as they facilitate color-theming - apposed to more
 complex style-theming, and brand-theme [a current
 exception is the icon url, the application is currently
