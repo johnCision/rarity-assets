@@ -1,9 +1,11 @@
 .brandC {
-	font-size: larger;
+	/* font-size: larger; */
 	font-family: "Proxima Nova", sans-serif !important;
 
-	--theme-brand-color: hsla(195, 100%, 33%, 1);
+	--theme-brand-color: hsla(195, 100%, 25%, 1);
+	--theme-brand-color: #00607F;
 	--theme-brand-text-color: white;
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -12,10 +14,10 @@
 		--scheme-primary-text: black;
 		--scheme-primary-border: #EBECED;
 
-		--scheme-secondary-background-color: papayawhip;
+		 --scheme-secondary-background-color: #F6F8F8; /* papayawhip; */
 		--scheme-secondary-text-color: black;
 
-		--scheme-trinary-background-color: #e3d7bf;
+		--scheme-trinary-background-color: #EEEEEE; /*  #e3d7bf; */
 		--scheme-trinary-text-color: black;
 
 		/* --scheme-quadranary-background-color: #c9ba9d; */

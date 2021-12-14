@@ -19,18 +19,6 @@
 }
 
 
-/* tile-like */
-#dashboard > li:not(#myItems),
-#myItems > ul > li ,
-#usageTile {
-	background-color: var(--theme-dashboard-tile-background-color, red);
-	color: var(--theme-dashboard-tile-text-color, red);
-
-	border: 1px solid var(--theme-dashboard-tile-border-color, red);
-	border-radius: 0.5em;
-	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
-}
-
 
 #dashboard {
 	grid-area: dashboard;
@@ -53,20 +41,66 @@
 	display: block;
 }
 
-#myDashboards {
+ul#myDashboards {
 	list-style: none;
+	display: flex;
+	flex-direction: column;
 }
 
-#myItems > ul {
+ul#myDashboards > li {
 	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	padding-block: .25em;
+}
+
+ul#myDashboards > li:nth-child(n+2) {
+	border-block-start: 1px solid darkslategrey;
+	margin-block-start: 0.5em;
+}
+
+ul#myDashboards > li:nth-child(n+4) {
+	display: none;
+}
+
+ul#myDashboards > li > span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;;
+}
+
+ul#myDashboards > li > span:first-child {
+	line-height: 16px;
+	margin-block-end: .5em;
+	font-weight: bold;
+}
+
+ul#myDashboards > li > span:not(:first-child) {
+	color: grey;
+}
+
+
+
+#myItems > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	justify-content: space-between;
 	gap: var(--dashboard-tile-gap, red);
+
+	width: 100%;
 }
 
 #myItems > ul > li {
 	list-style: none;
 	display: block;
+
+	min-width: 30ch;
 }
+
+#myItems > ul > li > first-time-tile-surface {
+	width: 100%;
+}
+
 
 
 #quickLooks {
