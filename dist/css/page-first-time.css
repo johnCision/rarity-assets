@@ -47,6 +47,7 @@ ul#myDashboards {
 	flex-direction: column;
 }
 
+ul#mySearches > li,
 ul#myDashboards > li {
 	display: flex;
 	flex-direction: column;
@@ -54,27 +55,32 @@ ul#myDashboards > li {
 	padding-block: .25em;
 }
 
+ul#mySearches > li:nth-child(n+2),
 ul#myDashboards > li:nth-child(n+2) {
-	border-block-start: 1px solid darkslategrey;
+	border-block-start: 1px solid lightgrey;
 	margin-block-start: 0.5em;
 }
 
+ul#mySearches > li:nth-child(n+4),
 ul#myDashboards > li:nth-child(n+4) {
 	display: none;
 }
 
+ul#mySearches > li > span,
 ul#myDashboards > li > span {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;;
 }
 
+ul#mySearches > li > span:first-child,
 ul#myDashboards > li > span:first-child {
 	line-height: 16px;
 	margin-block-end: .5em;
 	font-weight: bold;
 }
 
+ul#mySearches > li > span:not(:first-child),
 ul#myDashboards > li > span:not(:first-child) {
 	color: grey;
 }
@@ -100,6 +106,17 @@ ul#myDashboards > li > span:not(:first-child) {
 #myItems > ul > li > first-time-tile-surface {
 	width: 100%;
 }
+
+
+#topContentList {
+	display: flex;
+}
+
+first-time-top-content-item {
+	display: block;
+	max-width: 33%;
+}
+
 
 
 

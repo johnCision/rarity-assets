@@ -1,0 +1,17 @@
+
+first-time-tile-multi-line-title {
+	display: grid;
+	grid-template-columns: min-content 1fr min-content;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	margin-block-end: 1em;
+}
+
+
