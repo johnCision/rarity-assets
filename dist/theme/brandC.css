@@ -8,6 +8,12 @@
 
 }
 
+@supports color-contrast() {
+	.brandC {
+		--theme-brand-text-color: color-contrast(var(--theme-brand-color) vs white, black);
+	}
+}
+
 @media (prefers-color-scheme: light) {
 	.brandC {
 		--scheme-primary-background: white;

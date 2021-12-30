@@ -1,0 +1,85 @@
+
+.brandD {
+
+	--theme-brand-color-h: 300;
+	--theme-brand-color-s: 30%;
+	--theme-brand-color-l: 50%;
+
+	--theme-brand-color-hsl: var(--theme-brand-color-h), var(--theme-brand-color-s), var(--theme-brand-color-l);
+	--theme-brand-color: hsl(var(--theme-brand-color-hsl));
+
+	--lighten-percentage: 40%;
+	--darken-percentage: 15%;
+
+	/* https://una.im/css-color-theming/ */
+	--theme-brand-color--light: var(--theme-brand-color-h), var(--theme-brand-color-s), calc(var(--theme-brand-color-l) + var(--lighten-percentage));
+	--theme-brand-color--dark: var(--theme-brand-color-h), var(--theme-brand-color-s), calc(var(--theme-brand-color-l) - var(--darken-percentage));
+	--theme-brand-color--complement: calc(var(--theme-brand-color-h) + 180), var(--theme-brand-color-s), var(--theme-brand-color-l);
+	--theme-brand-color--complement-light: calc(var(--theme-brand-color-h) + 180), var(--theme-brand-color-s), calc(var(--theme-brand-color-l) + var(--lighten-percentage));
+	--theme-brand-color--triad1: calc(var(--theme-brand-color-h) + 120), var(--theme-brand-color-s), var(--theme-brand-color-l);
+	--theme-brand-color--triad2: calc(var(--theme-brand-color-h) + 240), var(--theme-brand-color-s), var(--theme-brand-color-l);
+
+
+
+	/* --theme-brand-color: hsla(195, 100%, 25%, 1); */
+	/* --theme-brand-color: #00607F; */
+
+	--theme-brand-text-color: white;
+
+}
+
+
+.brandD {
+	--scheme-primary-background: hsl(var(--theme-brand-color--light));
+	--scheme-primary-text: black;
+	--scheme-primary-border: red;
+
+	--scheme-secondary-background-color: hsl(var(--theme-brand-color--complement-light));
+	--scheme-secondary-text-color: black;
+
+	--scheme-trinary-background-color: hsl(var(--theme-brand-color--triad1));
+	--scheme-trinary-text-color: black;
+
+	/* --scheme-quadranary-background-color: #c9ba9d; */
+
+	/* --scheme-accent-color: #60bdd0; */
+	--scheme-accent-color: hsl(var(--theme-brand-color--triad2));
+	--scheme-accent-text-color: red;
+
+	--scheme-control-page-boundary-color: hsl(var(--theme-brand-color--dark));
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.brandD {
+		--theme-brand-color-h: 255;
+		--theme-brand-color-s: 30%;
+		--theme-brand-color-l: 15%;
+
+		--scheme-primary-text: black;
+		--scheme-secondary-text-color: white;
+		--scheme-trinary-text-color: white;
+
+		--theme-brand-text-color: white;
+
+	}
+}
+
+
+
+
+.brandD first-time-tile-surface {
+	background: paint(rough-rect);
+	--rough-stroke: hsl(var(--theme-brand-color--complement));
+	--rough-fill: hsl(var(--theme-brand-color--light));
+	border-width: 5;
+	box-shadow: none;
+	border-radius: initial;
+}
+
+@media (prefers-color-scheme: dark) {
+	.brandD first-time-tile-surface {
+		--rough-stroke: hsl(var(--theme-brand-color--complement));
+		--rough-fill: rgba(0,0,0, 20%);
+	}
+}

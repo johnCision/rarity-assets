@@ -1,16 +1,34 @@
 .brandB {
-	--theme-brand-color: black;
-	--theme-brand-text-color: white;
 
-	--theme-primary-background: white;
-	--theme-primary-text: black;
+	--theme-even: mediumpurple;
+	--theme-odd: whitesmoke;
 
-	--theme-secondary-background-color: black;
-	--theme-secondary-text-color: white;
+	--theme-brand-color: var(--theme-even);
+	--theme-brand-text-color: var(--theme-odd);
+}
 
-	--theme-aside-background-color: black;
-	--theme-aside-text-color: white;
+.brandB {
+	--scheme-primary-background: var(--theme-odd);
+	--scheme-primary-text: var(--theme-even);
+	--scheme-primary-border: var(--theme-even);
 
-	--theme-face-icon-color: black;
-	--theme-face-icon-background: white;
+	--scheme-secondary-background-color: var(--theme-odd);
+	--scheme-secondary-text-color: var(--theme-even);
+
+	--scheme-trinary-background-color: var(--theme-odd);
+	--scheme-trinary-text-color: var(--theme-even);
+
+	--scheme-accent-color: var(--theme-even);
+	--scheme-accent-text-color: var(--theme-odd);
+
+	--scheme-control-page-boundary-color: var(--theme-even);
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.brandB {
+
+	--theme-even: rebeccapurple;
+	--theme-odd: mediumpurple;
+	}
 }

@@ -36,6 +36,10 @@ body {
 
 	--theme-button-set-break-color: var(--theme-brand-color);
 
+	/* Face Icon Button  */
+	--theme-face-icon-color: black;
+	--theme-face-icon-background: lightgrey;
+
 
 	/* First Time Tile Stuff  */
 	--theme-dashboard-background-color: var(--theme-non-interactive-page-background);

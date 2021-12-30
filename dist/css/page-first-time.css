@@ -89,7 +89,7 @@ ul#myDashboards > li > span:not(:first-child) {
 
 #myItems > ul {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 	gap: var(--dashboard-tile-gap, red);
 

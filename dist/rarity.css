@@ -57,7 +57,7 @@ complex style-theming, and brand-theme [a current
 exception is the icon url, the application is currently
 overriding that until proper path can be resolved])
 */
-:root {
+/* :root {
 	--theme-brand-color: red;
 	--theme-brand-text-color: red;
 
@@ -90,4 +90,4 @@ overriding that until proper path can be resolved])
 
 	--theme-face-icon-color: black;
 	--theme-face-icon-background: lightgrey;
-}
+} */
